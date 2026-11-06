@@ -117,7 +117,7 @@ table.tb th:first-child,table.tb td:first-child{text-align:left}
 <style id="pageStyle">@page{size:58mm auto;margin:2mm}</style>
 </head>
 <body>
-<header><span id="appTitle">Bán hàng</span><span id="syncDot" class="syncdot"></span></header>
+<header><span id="appTitle">Fox-store</span><span id="syncDot" class="syncdot"></span></header>
 <main>
  <!-- ===== BÁN HÀNG ===== -->
  <section class="tab on" id="t-sell">
@@ -2178,7 +2178,7 @@ setInterval(()=>{if(cfg.url&&!syncing&&document.visibilityState==='visible')sync
 
 /* ================= TIÊU ĐỀ ================= */
 function renderTitle(){
-  const shop=((db.shop&&db.shop.name)||'').trim()||'Fox-store';
+  const shop=((db.shop&&db.shop.name)||'').trim()||'Bán hàng';
   const dev=(local.device||'').trim();
   $('appTitle').innerHTML=esc(shop)+(dev?'<span class="devname"> - '+esc(dev)+'</span>':'');
   document.title=shop;
