@@ -2178,7 +2178,7 @@ setInterval(()=>{if(cfg.url&&!syncing&&document.visibilityState==='visible')sync
 
 /* ================= TIÊU ĐỀ ================= */
 function renderTitle(){
-  const shop=((db.shop&&db.shop.name)||'').trim()||'Bán hàng';
+  const shop=((db.shop&&db.shop.name)||'').trim()||'Fox-store';
   const dev=(local.device||'').trim();
   $('appTitle').innerHTML=esc(shop)+(dev?'<span class="devname"> - '+esc(dev)+'</span>':'');
   document.title=shop;
